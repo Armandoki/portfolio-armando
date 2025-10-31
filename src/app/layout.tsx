@@ -7,7 +7,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Portafolio de Armando?",
     description: "Página portafolio de Armando?",
-    images: "/profile/profile-photo.jpg"
+    //images: "/profile/profile-photo.jpg"
+    images: "/profile/profile-photo-me.png"
   }
 };
 

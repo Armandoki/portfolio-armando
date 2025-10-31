@@ -1,6 +1,6 @@
 import { GiRecycle } from "react-icons/gi";
 import { AboutMeInterface, KnowledgeInterface, ProfessionalCareerInterface, ProjectInterface, StuffsInterface, WorkExperienceInterface } from "../interfaces/interfaces";
-import { FaBootstrap, FaCss3Alt, FaDumbbell, FaGithubSquare, FaHtml5, FaJs, FaLinkedin, FaPizzaSlice, FaPython, FaReact } from "react-icons/fa";
+import { FaBootstrap, FaCss3Alt, FaDumbbell, FaGithubSquare, FaHtml5, FaJs, FaLinkedin, FaPizzaSlice, FaPython, FaReact, FaVuejs } from "react-icons/fa";
 import { MdPictureAsPdf } from "react-icons/md";
 import { PiMicrosoftExcelLogoFill } from "react-icons/pi";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
@@ -21,7 +21,7 @@ export const work_experience: WorkExperienceInterface[] = [
         company: "Latitur",
         job: "Desarrollador Front End",
         type: "Full Time",
-        when: "Nov. 2024",
+        when: "Nov. 2024 - Sept. 2025",
         image: "/icons/latitur.jpg",
         description: `Trabajé en el desarrollo de nuevas funcionalidades y ajustes para la página web de Latitur, utilizando por sobre todo Nextjs y Tailwind CSS, además de librerías variadas para algunas funcionalidades y componentes.\n\nPor otra parte, también realizamos migraciones de los servicios de Latitur, por lo que me encargué de documentar todas las APIs de la web y sus funcionalidades, además de ajustar las peticiones a los nuevos end-points, cómo también su visualización en la página.\n\nUtilizábamos a su vez uBugTrack para la gestión de las tareas y como principal fuente de comunicación WhatsApp por su versatilidad y disponibilidad.
         `,
@@ -77,6 +77,7 @@ export const knowledge: KnowledgeInterface[] = [
     { name: "Tailwind", icon: <RiTailwindCssFill className="text-[#06B6D4] h-4 w-4" /> },
     { name: "Bootstrap", icon: <FaBootstrap className="text-[#7952B3] h-4 w-4" /> },
     { name: "NextJS", icon: <RiNextjsFill className="text-black h-4 w-4" /> },
+    { name: "VueJS", icon: <FaVuejs className="text-[#41B883] h-4 w-4" /> },
     { name: "Python", icon: <FaPython className="text-white h-4 w-4" /> },
     { name: "Excel", icon: <PiMicrosoftExcelLogoFill className="text-[#008000] h-4 w-4" /> },
     { name: "SQL", icon: <TbSql className="text-[#0064a5] h-4 w-4" /> },
@@ -143,6 +144,14 @@ export const projects: ProjectInterface[] = [
         image: "/projects/to-do-app.jpg",
         techs: ["html", "css", "js", "react", "bootstrap"],
         description: "Aplicación para organizar tareas"
+    },
+    {
+        name: "Weather App",
+        github: "https://github.com/Armandoki/weather-app",
+        link: "https://weather-app-dusky-two-12.vercel.app",
+        image: "/projects/weather-app.jpg",
+        techs: ["html", "css", "js", "vuejs", "bootstrap"],
+        description: "Aplicación simple para ver el tiempo en tu locación"
     },
     {
         name: "Primer Portafolio",

@@ -20,7 +20,8 @@ export default function Profile() {
       <div className="max-w-5xl mx-auto">
         <div className="relative">
           <Image
-            src={"/profile/profile-photo.jpg"}
+            //src={"/profile/profile-photo.jpg"}
+            src={"/profile/profile-photo-me.png"}
             alt="Imagen de perfil"
             width={952}
             height={946}
@@ -31,7 +32,7 @@ export default function Profile() {
               <div className="w-full sm:w-56 h-24 sm:h-auto"></div>
               <div className="pb-4 sm:pb-9 sm:pt-4">
                 <h1 className="text-center sm:text-left text-white text-3xl font-bold text-shadow-md">Armando?</h1>
-                <h2 className="text-center sm:text-left text-gray-400 text-xs font-medium text-shadow-md">Desarrollador Front-End</h2>
+                <h2 className="text-center sm:text-left text-gray-400 text-xs font-medium text-shadow-md">Ingeniero en Informática</h2>
               </div>
             </div>
 

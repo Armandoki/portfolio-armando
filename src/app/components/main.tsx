@@ -19,7 +19,7 @@ export default function Main() {
 
                         <div className="bg-[#252728] px-2 py-2 rounded-md shadow-md">
                             <h3 className="text-left text-gray-300 text-xl font-medium text-shadow-md pl-1">Experiencia Profesional</h3>
-                            <div className="flex flex-col justify-around mt-2 gap-2 max-h-64 overflow-y-auto scrollbar-none">
+                            <div className="flex flex-col justify-around mt-2 gap-2 overflow-y-auto scrollbar-none">
                                 {work_experience.map((item, index) =>
                                     item.isProfessional &&
                                     <div key={index} className="bg-[#1c1c1d] hover:bg-[#4f5152] h-20 rounded-lg shadow-md flex flex-row items-center p-1 gap-2 sm:gap-3 cursor-pointer" onClick={() => { setDataModal({ data: item, show: true }) }}>
@@ -42,7 +42,7 @@ export default function Main() {
 
                         <div className="bg-[#252728] px-2 py-2 rounded-md shadow-md">
                             <h3 className="text-left text-gray-300 text-xl font-medium text-shadow-md pl-1">Otras Experiencias</h3>
-                            <div className="flex flex-col justify-around mt-2 gap-2 max-h-60 sm:max-h-64 overflow-y-auto scrollbar-none">
+                            <div className="flex flex-col justify-around mt-2 gap-2 overflow-y-auto scrollbar-none">
                                 {work_experience.map((item, index) =>
                                     !item.isProfessional &&
                                     <div key={index} className="bg-[#1c1c1d] hover:bg-[#4f5152] h-20 rounded-lg shadow-md flex flex-row items-center p-1 gap-2 sm:gap-3 cursor-pointer" onClick={() => { setDataModal({ data: item, show: true }) }}>
@@ -80,7 +80,7 @@ export default function Main() {
 
                         <div className="bg-[#252728] px-2 py-2 rounded-md sm:max-h-max shadow-md">
                             <h3 className="text-left text-gray-300 text-xl font-medium text-shadow-md pl-1">Educación</h3>
-                            <div className="flex flex-col justify-around mt-2 gap-2 max-h-60 sm:max-h-64 overflow-y-auto scrollbar-none">
+                            <div className="flex flex-col justify-around mt-2 gap-2 overflow-y-auto scrollbar-none">
                                 {professional_career.map((item, index) =>
                                     <div key={index} className="bg-[#1c1c1d] h-20 rounded-lg shadow-md flex flex-row items-center p-1 gap-2 sm:gap-3">
                                         <Image

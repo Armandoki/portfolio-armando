@@ -7,6 +7,15 @@ export default function Profile() {
     <section className="bg-[#252728]">
       <div className="bg-gradient-to-b from-[#101111] to-[#252728]">
         <div className="max-w-5xl mx-auto">
+          <video
+            src="/profile/background.webm"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="aspect-32/9 object-cover object-top rounded-b-lg shadow-md w-full"
+          />
+          {/*
           <Image
             src={"/profile/wallpaper-photo.jpg"}
             alt="Imagen de portada"
@@ -14,6 +23,7 @@ export default function Profile() {
             height={1724}
             className="aspect-32/9 object-cover object-center rounded-b-lg shadow-md"
           />
+          */}
         </div>
       </div>
 
@@ -39,7 +49,7 @@ export default function Profile() {
             <div className="flex flex-row items-center justify-center sm:justify-between gap-1 pb-4 sm:pb-0 sm:pr-8">
               {stuffs.map((stuff, index) => (
                 <Link key={index} href={stuff.url} target="_blank" >
-                  <button className="hover:bg-[#4f5152] rounded-md px-4 py-2 flex flex-row justify-between items-center gap-2 cursor-pointer" aria-label={`Ir a ${stuff.name}`}  title={`Ir a ${stuff.name}`}>
+                  <button className="hover:bg-[#4f5152] rounded-md px-4 py-2 flex flex-row justify-between items-center gap-2 cursor-pointer" aria-label={`Ir a ${stuff.name}`} title={`Ir a ${stuff.name}`}>
                     {stuff.icon}
                     <span className="text-gray-400 text-xs font-medium text-shadow-md">{stuff.name}</span>
                   </button>

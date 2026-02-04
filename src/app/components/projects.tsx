@@ -41,37 +41,54 @@ export default function Projects() {
 
     return (
         <>
-            <div className="bg-[#1c1c1d] rounded-lg shadow-md flex flex-col p-1 pb-0 mt-2 mb-2">
-                <Image
-                    src={projects[indexProject].image}
-                    alt={`Imagen de ${projects[indexProject].name}`}
-                    width={1024}
-                    height={1024}
-                    className="text-white h-[124px] w-full rounded-md rounded-b-none aspect-1/1 object-cover"
-                />
-                <div className="p-2">
-                    <div className="flex flex-row justify-between items-center">
-                        <span className="text-white text-base font-medium line-clamp-1">{projects[indexProject].name}</span>
-                        <div className="flex justify-between gap-2">
-                            {projects[indexProject].link &&
-                                <Link href={projects[indexProject].link} target="_blank">
-                                    <button className="hover:bg-[#4f5152] rounded-md px-2 py-2 flex flex-row justify-between items-center gap-2 cursor-pointer" aria-label={`Ir a la página de ${projects[indexProject].name}`} title={`Ir a la página de ${projects[indexProject].name}`}>
-                                        <TbWorldWww className="text-[#0077B5] h-5 w-5" />
-                                    </button>
-                                </Link>
-                            }
-                            {projects[indexProject].github &&
-                                <Link href={projects[indexProject].github} target="_blank">
-                                    <button className="hover:bg-[#4f5152] rounded-md px-2 py-2 flex flex-row justify-between items-center gap-2 cursor-pointer" aria-label={`Ir al repositorio de ${projects[indexProject].name}`} title={`Ir al repositorio de ${projects[indexProject].name}`}>
-                                        <FaGithubSquare className="text-[#FFFFFF] h-5 w-5" />
-                                    </button>
-                                </Link>
-                            }
+            <div className="relative group overflow-hidden">
+                <div className="flex transition-transform duration-450"
+                    style={{ transform: `translateX(-${indexProject * 100}%)` }}>
+
+
+
+                    {projects.map((project, index) => (
+                        <div key={index} className="w-full flex-shrink-0 relative px-1">
+                            <div className="bg-[#1c1c1d] rounded-lg shadow-md flex flex-col p-1 pb-0 mt-2 mb-2">
+                                <Image
+                                    src={project.image}
+                                    alt={`Imagen de ${project.name}`}
+                                    width={1024}
+                                    height={1024}
+                                    className="text-white rounded-md rounded-b-none aspect-21/9 object-cover"
+                                />
+                                <div className="p-2">
+                                    <div className="flex flex-row justify-between items-center">
+                                        <span className="text-white text-base font-medium line-clamp-1">{project.name}</span>
+                                        <div className="flex justify-between gap-2">
+                                            {project.link &&
+                                                <Link href={project.link} target="_blank">
+                                                    <button className="hover:bg-[#4f5152] rounded-md px-2 py-2 flex flex-row justify-between items-center gap-2 cursor-pointer" aria-label={`Ir a la página de ${project.name}`} title={`Ir a la página de ${project.name}`}>
+                                                        <TbWorldWww className="text-[#0077B5] h-5 w-5" />
+                                                    </button>
+                                                </Link>
+                                            }
+                                            {project.github &&
+                                                <Link href={project.github} target="_blank">
+                                                    <button className="hover:bg-[#4f5152] rounded-md px-2 py-2 flex flex-row justify-between items-center gap-2 cursor-pointer" aria-label={`Ir al repositorio de ${project.name}`} title={`Ir al repositorio de ${project.name}`}>
+                                                        <FaGithubSquare className="text-[#FFFFFF] h-5 w-5" />
+                                                    </button>
+                                                </Link>
+                                            }
+                                        </div>
+                                    </div>
+                                    <p className="text-gray-400 text-xs line-clamp-3 font-medium text-justify pt-1 h-14">
+                                        {project.description}
+                                    </p>
+                                    <div className="flex flex-row gap-2 pb-1">
+                                        {project.techs.map((tech, index) => (
+                                            <span key={index}>{tech}</span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <p className="text-gray-400 text-xs line-clamp-3 font-medium text-justify pt-1 h-14">
-                        {projects[indexProject].description}
-                    </p>
+                    ))}
                 </div>
             </div>
 

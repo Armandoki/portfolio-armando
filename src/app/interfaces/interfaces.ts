@@ -44,7 +44,7 @@ export interface ProjectInterface {
     link: string
     github: string
     name: string
-    techs: string[]
+    techs: JSX.Element[]
     image: string
     description: string
 }

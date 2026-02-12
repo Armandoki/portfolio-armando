@@ -8,6 +8,7 @@ import { TbSql } from "react-icons/tb";
 import { IoGameController } from "react-icons/io5";
 import { BiSolidCameraMovie } from "react-icons/bi";
 import { SiIonic, SiSupabase, SiTypescript } from "react-icons/si";
+import { VscGraph } from "react-icons/vsc";
 
 export const stuffs: StuffsInterface[] = [
     { url: "https://www.linkedin.com/in/armando-neira-a700ba1ba/", name: "Linkedin", icon: <FaLinkedin className="text-[#0077B5] h-4 w-4" /> },
@@ -92,6 +93,7 @@ export const knowledge: KnowledgeInterface[] = [
     { name: "VueJS", icon: <FaVuejs className="text-[#41B883] h-4 w-4" /> },
     { name: "Python", icon: <FaPython className="text-white h-4 w-4" /> },
     { name: "Excel", icon: <PiMicrosoftExcelLogoFill className="text-[#008000] h-4 w-4" /> },
+    { name: "Power BI", icon: <VscGraph className="text-[#F9D087] h-4 w-4" /> },
     { name: "SQL", icon: <TbSql className="text-[#0064a5] h-4 w-4" /> },
     { name: "Supabase", icon: <SiSupabase className="text-[#34B27B] h-4 w-4" /> },
     { name: "SCRUM", icon: <GiRecycle className="text-[#FFD700] h-4 w-4" /> }

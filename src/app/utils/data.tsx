@@ -7,7 +7,7 @@ import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { TbSql } from "react-icons/tb";
 import { IoGameController } from "react-icons/io5";
 import { BiSolidCameraMovie } from "react-icons/bi";
-import { SiBlender, SiCanva, SiIonic, SiSupabase, SiTypescript } from "react-icons/si";
+import { SiBlender, SiCanva, SiIonic, SiSpringboot, SiSupabase, SiTypescript } from "react-icons/si";
 import { VscGraph } from "react-icons/vsc";
 
 export const stuffs: StuffsInterface[] = [
@@ -18,6 +18,16 @@ export const stuffs: StuffsInterface[] = [
 
 //AGREGAR DESCRIPCIONES POR MI
 export const work_experience: WorkExperienceInterface[] = [
+    {
+        link: "",
+        company: "Arkenco",
+        job: "Desarrollador Front End",
+        type: "Part Time",
+        when: "May. 2026",
+        image: "/icons/arkenco.jpg",
+        description: `Principalmente desarrollando nuevas funcionalidades, ajustes y diseños para el CRM de Arkenco, utilizando principalmente React y Tailwind CSS, además de algunas librerías de React como Prime React.`,
+        isProfessional: true
+    },
     {
         link: "",
         company: "MASS Chile",
@@ -96,6 +106,7 @@ export const knowledge: KnowledgeInterface[] = [
     { name: "Power BI", icon: <VscGraph className="text-[#F9D087] h-4 w-4" /> },
     { name: "SQL", icon: <TbSql className="text-[#0064a5] h-4 w-4" /> },
     { name: "Supabase", icon: <SiSupabase className="text-[#34B27B] h-4 w-4" /> },
+    { name: "Spring Boot", icon: <SiSpringboot className="text-[#6DB33F] h-4 w-4" /> },
     { name: "SCRUM", icon: <GiRecycle className="text-[#FFD700] h-4 w-4" /> },
     { name: "Blender", icon: <SiBlender className="text-[#EA7600] h-4 w-4" /> },
     { name: "Canva", icon: <SiCanva className="text-[#07B9CE] h-4 w-4" /> }

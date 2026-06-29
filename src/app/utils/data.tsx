@@ -25,7 +25,7 @@ export const work_experience: WorkExperienceInterface[] = [
         type: "Part Time",
         when: "May. 2026",
         image: "/icons/arkenco.jpg",
-        description: `Principalmente desarrollando nuevas funcionalidades, ajustes y diseños para el CRM de Arkenco, utilizando principalmente React y Tailwind CSS, además de algunas librerías de React como Prime React.`,
+        description: `Migración y modernización del CRM corporativo desde React a Next.js, participando en el refactor de la aplicación, el desarrollo de nuevas funcionalidades y la implementación de mejoras de rendimiento, interfaz y experiencia de usuario.\n\nDesarrollo utilizando Next.js, TypeScript, Tailwind CSS, PrimeReact y DND Kit, contribuyendo a la optimización de la arquitectura y al mantenimiento continuo del sistema.`,
         isProfessional: true
     },
     {
